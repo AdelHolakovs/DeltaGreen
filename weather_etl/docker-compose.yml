@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: weather
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: weatherdb
+    volumes:
+      - ./docker/init_db:/docker-entrypoint-initdb.d
+    ports:
+      - "5433:5432"   # ← místo 5432:5432 použij 5433:5432
+
