@@ -1,2 +1,6 @@
 load_from:
-  - python_file: ../test.py
+  - python_file: test.py
+
+
+
+
