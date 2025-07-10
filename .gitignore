@@ -1,1 +1,3 @@
 .venv/
+weather_etl/dagster_home/
+weather_etl/.env
